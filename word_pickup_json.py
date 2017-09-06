@@ -21,5 +21,5 @@ for line in word_list:
     df = df.reset_index()  # sort out new oder of columns
     del df['index']
     print df
-    df.to_csv(line + ".txt", index=False)  # save as .txt
-    # df.to_json(line + ".json")  # save as .json
+    df.to_csv(line+".txt", index=False)  # save as .txt
+    # df.to_json(line+".json")  # save as .json
