@@ -22,7 +22,7 @@ for line in list:
     # print type(line)
     # df = df[df['synset_definition'].str.contains(line+"$", case=True)]  # search the independent word, if just search the part include word: delete +"S"
     df = df[df['synset_name'].str.contains(line, case=True) |
-            df['synset_definition'].str.contains(line, case=True)]  # search in both rows
+            df['synset_definition'].str.contains(line+"$", case=True)]  # search in both rows
     df = df.drop_duplicates()  #delete repeated data
     df = df.sort_index()  # sort data as ascending
     df = df.reset_index()  # sort out new oder of columns
