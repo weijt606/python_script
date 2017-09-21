@@ -1,4 +1,3 @@
-safe
+# input the word, which you want to extract
+red
 danger
-harm
-source
